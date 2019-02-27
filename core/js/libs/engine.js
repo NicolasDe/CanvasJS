@@ -26,7 +26,7 @@ class Engine extends Platform
 	{
 		super();
 
-		this.includeModules = ['module', 'module_input', 'module_renderer'];
+		this.includeModules = ['module_input', 'module_renderer'];
 		this.deltaTime = 0.0;
 
 		this.AssetsTest = new Array();
