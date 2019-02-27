@@ -83,7 +83,7 @@ class Platform
 				}
 				else
 				{
-					const errorMsg = 'Failed to load asset: ' + assetName + '\nStatus: ' + loadRequest.statusText;
+					const errorMsg = 'Failed to load asset: ' + assetName;
 					Platform.PrintError(errorMsg);
 				}
 			}
@@ -135,7 +135,7 @@ class Platform
 					}
 					else
 					{
-						const errorMsg = 'Failed to load asset: ' + assetName + '\nStatus: ' + loadRequest.statusText;
+						const errorMsg = 'Failed to load asset: ' + assetName;
 						Platform.PrintError(errorMsg);
 					}
 				}
@@ -168,7 +168,7 @@ class Platform
 			{
 				if (loadRequest.status === 200)
 				{
-					Platform.PrintDebug('User page name: ' + pageName + '\nStatus: ' + loadRequest.statusText);
+					Platform.PrintDebug('User page name: ' + pageName);
 
 					/*
 					const insertPage = document.createElement('script');
@@ -193,7 +193,7 @@ class Platform
 				}
 				else
 				{
-					const errorMsg = 'Failed to load user page: ' + pageName + '\nStatus: ' + loadRequest.statusText;
+					const errorMsg = 'Failed to load user page: ' + pageName;
 					Platform.PrintError(errorMsg);
 				}
 			}
@@ -225,7 +225,7 @@ class Platform
 			{
 				if (loadRequest.status === 200)
 				{
-					Platform.PrintDebug('Engine module name: ' + ModuleName + '\nStatus: ' + loadRequest.statusText);
+					Platform.PrintDebug('Engine module name: ' + ModuleName);
 
 					const insertModule = document.createElement('script');
 					insertModule.id = ModuleName;
@@ -242,7 +242,7 @@ class Platform
 				}
 				else
 				{
-					const errorMsg = 'Failed to load module: ' + ModuleName + '\nStatus: ' + loadRequest.statusText;
+					const errorMsg = 'Failed to load module: ' + ModuleName;
 					Platform.PrintError(errorMsg);
 				}
 			}
@@ -278,7 +278,7 @@ class Platform
 				{
 					if (loadRequest.status === 200)
 					{
-						Platform.PrintDebug('Engine module name: ' + ModuleNames[i] + '\nStatus: ' + loadRequest.statusText);
+						Platform.PrintDebug('Engine module name: ' + ModuleNames[i]);
 
 						const insertModule = document.createElement('script');
 						insertModule.id = ModuleNames[i];
@@ -302,7 +302,7 @@ class Platform
 					}
 					else
 					{
-						const errorMsg = 'Failed to load module: ' + ModuleNames[i] + '\nStatus: ' + loadRequest.statusText;
+						const errorMsg = 'Failed to load module: ' + ModuleNames[i];
 						Platform.PrintError(errorMsg);
 					}
 				}
